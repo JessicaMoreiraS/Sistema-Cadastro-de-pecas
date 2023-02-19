@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+header{
+    background-color: #b87333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 2em;
+    font-weight: 700;
+    padding: 1.3em;
+}
+nav{
+    background-color: #815924;
+    width: 93%;
+    padding: 0.8em;
+    border-bottom: 2px solid  #b87333;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 3%;
+}
+@media only screen and (max-width:500px){
+    nav{
+        justify-content: space-between;
+    }
+    nav a{
+        margin: 0;
+    }
+} 
+body{
+    background-color: #ffebd1;
+}
+main{
+    background-color: #ffebd1;
+}
+.corpoForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    min-width: 315px;
+    border: 10px double #fff;
+    margin-top: 2%;
+    border-radius: 5px;
+    background-color: #b87f33;
+}
+.divInput1, .divInput2{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+.divInput1 input, .divInput2 input{
+    font-size: 1.2em;
+    padding: 1%;
+    font-family: 'IBM Plex Mono', monospace;
+    border-radius: 5px;
+    border: 2px solid #815924;
+}
+.divInput1 input{
+    width: 100%;
+}
+.divInput2 input{
+    width: 40%;
+}
+
+button{
+    font-size: 1em;
+    margin: 2%;
+    padding: 10%;
+    padding: 1%;
+    cursor: pointer;
+}
+.btnCadastrar{
+    font-size: 1.2em;
+    background-color: #ffebd1;
+    color: #815924;
+    border: 2px solid #815924;
+    border-radius: 5px;
+}
+.btnCadastrar:hover{
+    background-color: #815924;
+    color: #fff;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.btns button{
+    background-color: #815924;
+    color: #fff;
+    border:2px solid #fff;
+    border-radius: 5px;
+}
+.btns button:hover{
+    background-color: #fff;
+    color: #815924;
+    border:2px solid #815924;
+    font-weight: 700;
+}
+
+
+
+
+#areaEstoqueTotal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.caixa{
+    min-width: 10em;
+    width: 18%;
+    min-height: 10em;
+    margin: 3%;
+    /*box-shadow: 10px 10px grey;*/
+    background-color: rgb(181, 148, 105);
+    position: relative;
+    overflow: hidden;
+}
+
+/*after e before estão fazendo o recorte deagonal na ponta da caixa*/
+.caixa::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background-color: #ffebd1;
+}
+.caixa::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: -15px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background-color: #ffebd1;
+}
+.caixaFrente{
+    background-color: burlywood;
+    margin-top: 1.2em;
+    margin-left: 8%;
+    width: 92%;
+    min-height: 8em;
+    font-size: 110%;
+}
+
+.caixaFrente p{
+    margin-left: 15%;
+    margin-bottom: 2%;
+    padding-top: 2%;
+}

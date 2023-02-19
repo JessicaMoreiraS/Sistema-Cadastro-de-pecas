@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" ></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Sistema de  Cadastro de Peças</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="index.html">Cadastro de peças</a>
+            <a href="#">Fornecedores</a>
+        </nav>
+    </header>
+    <main>
+        <div class="corpoForm">
+            <div class="form">
+                <div class="divInput1">
+                    <input type="text" id="nomeDaPeca" placeholder="Nome do produto">
+                </div>
+                <div class="divInput2">
+                    <input type="number" id="peso" placeholder="Peso unitário (g)">
+                    <input type="number" id="quantidade" placeholder="Quantidade">
+                </div>
+                
+                <button class="btnCadastrar" id="cadastrar" onclick="cadastrar()">Cadastrar</button>
+                
+            </div>
+
+            <div class="btns">
+                <button onclick="totalEstoque()">Estoque total</button>
+                <button onclick="listagemProdutos()">Caixas individuais</button>
+            </div>
+        </div>
+    
+        
+        <div id="areaEstoqueTotal"></div>
+        
+
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
